@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo__figure{
+    width: 160px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.logo__img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav{
+    width: 100%;
+    height: 80px;
+    background-color: coral;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.nav__ul{
+    display: flex;
+}
+
+.nav__li{
+    list-style: none;
+    margin-left: 10px;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    padding: 10px 10px;
+}
+
+.menu{
+    display: none;
+}
+
+/* AGREGAR USUARIOS */
+.agregarUsuarios{
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.title{
+    text-align: center;
+    font-family: cursive;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.form{
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    padding: 20px 0;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.form__input{
+    width: 90%;
+    height: 35px;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
+    font-size: 15px;
+}
+
+.form__submit{
+    width: 50%;
+    height: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 13px;
+    background-color: #194EA5;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* USUARIOS  */
+.obtenerUsusarios{
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
+}
+
+.card__creacion{
+    margin-top: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 350px));
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card__nombre{
+    font-weight: bold;
+}
+
+.card__fecha{
+    font-weight: bold;
+}
+
+.card__delete{
+    width: 50%;
+    height: 30px;
+    margin-top: 20px;
+    align-self: flex-start;
+    background-color: #E63F31;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* CREATE NOTE  */
+.createNote{
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.noteTitle{
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: cursive;
+}
+
+.noteForm{
+    width: 400px;
+    height: 350px;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formSelect{
+    width: 70%;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.formTitle{
+  width: 70%;
+  height: 35px;
+  margin-top: 20px;   
+  font-size: 1rem;
+  padding: 0 10px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formDescription{
+    width: 70%;
+    height: 100px;
+    resize: none;
+    margin-top: 20px;
+    padding: 0 10px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+}
+
+.formFecha{
+    width: 70%;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 60px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    outline: none;
+}
+
+.noteSubmit{
+    width: 50%;
+    height: 35px;
+    background-color: #194EA5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* CARGA DE NOTAS  */
+.notasCargadas{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px 20px;
+}
+
+.notasGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    justify-content: center;
+    gap: 10px;
+}
+
+.card__notes{
+   width:400px;
+   height: auto;
+   background-color: white;
+   border: 5px;
+   box-shadow: 0 0 3px 0 rgba(0,0,0, .5);
+   padding: 20px 20px;
+}
+
+.card__title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.card__description{
+    width: 100%;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.content__autor{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.creado{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.autor{
+    font-weight: bold;
+}
+
+.fecha{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.botones{
+    margin-top: 20px;
+}
+
+.eliminar__nota{
+    width: 150px;
+    height: 35px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.actualizar__nota{
+    padding:8px 40px;
+    text-decoration: none;
+    background-color: yellow;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 20px;
+}
